@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fedel - Real Estate & Cars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    .cta, .login-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+    button, input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover, input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="tel"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fedel Real Estate & Cars</h1>
+    <p>Your one-stop destination for homes and rides</p>
+  </header>
+
+  <main>
+    <!-- Car and Property Promo Section -->
+    <div class="cta">
+      <h2>Buy a Car with Your New Property</h2>
+      <p>Fedel helps you own a car when you buy property through our trusted platform.</p>
+      <p>Get exclusive deals on cars as part of your real estate purchase!</p>
+      <button onclick="promptUser()">Start Now</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-form">
+      <h2>Customer Login</h2>
+      <form onsubmit="return handleLogin(event)">
+        <input type="text" id="username" name="username" placeholder="Username" required><br>
+        <input type="password" id="password" name="password" placeholder="Password" required><br>
+        <input type="number" id="idNumber" name="idNumber" placeholder="ID Number" required><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </main>
+
+  <script>
+    function promptUser() {
+      const name = prompt("Welcome to Fedel! What's your name?");
+      if (name) {
+        alert("Hi " + name + "! Let's help you buy your dream car and property.");
+      }
+    }
+
+    function handleLogin(event) {
+      event.preventDefault(); // Stop form from submitting
+      const username = document.getElementById("username").value;
+      alert("Welcome, " + username + "! You are now logged in.");
+      return false;
+    }
+  </script>
+
+</body>
+</html>
