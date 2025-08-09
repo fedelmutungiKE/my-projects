@@ -1,0 +1,31 @@
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "fedel_db";
+
+$conn = mysqli_connect($host, $user, $password, $dbname);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$idnumber = $_POST['idnumber'];
+$phone = $_POST['phone'];
+
+$sql = "SELECT * FROM users WHERE username='$username' AND password='$password' AND idnumber='$idnumber' AND phone='$phone'";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    echo "<h2>Login successful. Welcome, $username!</h2>";
+    echo "<h3>Here are some properties for you:</h3>";
+    echo "<img src='house1.jpg' width='300'><br>";
+    echo "<img src='car1.jpg' width='300'><br>";
+} else {
+    echo "<h3 style='color:red;'>Login failed. Invalid credentials.</h3>";
+}
+
+mysqli_close($conn);
+?>
