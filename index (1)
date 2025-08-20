@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutungi Fedel - Software Engineer Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      max-width: 600px;
+      background: white;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 15px;
+      background: #ecf0f1;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Software Engineer Profile</h2>
+    
+    <p><strong>Name:</strong> Mutungi Fedel</p>
+    <p><strong>Age:</strong> 20</p>
+    <p><strong>Phone:</strong> 0758565096</p>
+    <p><strong>Email:</strong> mutungifedel@gmail.com</p>
+    <p><strong>Location:</strong> Kiambu, Kenya</p>
+    <p><strong>Occupation:</strong> Software Engineer</p>
+    
+    <label for="platforms">Enter the platforms you are on (e.g., LinkedIn, GitHub, Instagram):</label>
+    <input type="text" id="platforms" placeholder="LinkedIn, GitHub, Instagram">
+    
+    <button onclick="generateProfile()">Generate Profile</button>
+    
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    function generateProfile() {
+      const platformsInput = document.getElementById("platforms").value;
+      const platforms = platformsInput.split(",").map(p => p.trim());
+      
+      const profile = {
+        name: "Mutungi Fedel",
+        age: 20,
+        phone: "0758565096",
+        email: "mutungifedel@gmail.com",
+        location: "Kiambu, Kenya",
+        occupation: "Software Engineer",
+        platforms: platforms,
+        skills: {
+          languages: ["Python", "JavaScript", "HTML", "CSS"],
+          frameworks: ["React", "Django", "Flask"],
+          tools: ["Git", "Docker", "VS Code"],
+          databases: ["MySQL", "MongoDB"]
+        }
+      };
+      
+      document.getElementById("output").innerHTML = `
+        <h3>Generated Profile</h3>
+        <p><strong>Name:</strong> ${profile.name}</p>
+        <p><strong>Age:</strong> ${profile.age}</p>
+        <p><strong>Phone:</strong> ${profile.phone}</p>
+        <p><strong>Email:</strong> ${profile.email}</p>
+        <p><strong>Location:</strong> ${profile.location}</p>
+        <p><strong>Occupation:</strong> ${profile.occupation}</p>
+        <p><strong>Platforms:</strong> ${profile.platforms.join(", ")}</p>
+        <p><strong>Skills:</strong></p>
+        <ul>
+          <li><strong>Languages:</strong> ${profile.skills.languages.join(", ")}</li>
+          <li><strong>Frameworks:</strong> ${profile.skills.frameworks.join(", ")}</li>
+          <li><strong>Tools:</strong> ${profile.skills.tools.join(", ")}</li>
+          <li><strong>Databases:</strong> ${profile.skills.databases.join(", ")}</li>
+        </ul>
+      `;
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
