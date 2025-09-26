@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mutungi Fedel - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900">
+
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="profile.jpg" alt="Mutungi Fedel" class="w-12 h-12 rounded-full object-cover" />
+      <div>
+        <h1 class="font-semibold">Mutungi Fedel</h1>
+        <p class="text-sm text-gray-600">Copywriter • Content Writer • Technical Writer</p>
+      </div>
+    </div>
+    <nav class="flex gap-4 items-center">
+      <a href="#services" class="text-sm hover:underline">Services</a>
+      <a href="#work" class="text-sm hover:underline">Work</a>
+      <a href="#contact" class="text-sm hover:underline">Contact</a>
+      <a href="#contact" class="rounded-md px-4 py-2 bg-indigo-600 text-white text-sm shadow">Hire me</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-6xl mx-auto p-6">
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight">Words that sell — and explain.</h2>
+        <p class="mt-4 text-lg text-gray-700">
+          I help startups and products tell their story clearly so customers convert, and teams build faster.
+          I write copy, content, and technical docs with crisp clarity and measurable results.
+        </p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 text-white rounded-lg shadow">Let's work together</a>
+          <a href="mailto:mutungifedel@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 border rounded-lg">View portfolio</a>
+        </div>
+
+        <div class="mt-6 text-sm text-gray-600">
+          Available for remote work • Open to long-term contracts
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <h3 class="font-semibold">Quick pitch</h3>
+        <p class="mt-2 text-gray-700">
+          I turn product features into customer benefits, write SEO-conscious content, and create technical docs
+          that make software and hardware easier to use.
+        </p>
+        <div class="mt-4 grid grid-cols-2 gap-3">
+          <div class="p-3 border rounded-lg">
+            <div class="text-sm font-medium">Turnaround</div>
+            <div class="text-sm text-gray-600">2–5 days</div>
+          </div>
+          <div class="p-3 border rounded-lg">
+            <div class="text-sm font-medium">Rate</div>
+            <div class="text-sm text-gray-600">From $30 / hr</div>
+          </div>
+          <div class="p-3 border rounded-lg">
+            <div class="text-sm font-medium">Process</div>
+            <div class="text-sm text-gray-600">Research → Draft → Revise</div>
+          </div>
+          <div class="p-3 border rounded-lg">
+            <div class="text-sm font-medium">Languages</div>
+            <div class="text-sm text-gray-600">English (native)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-8">
+      <h3 class="text-2xl font-bold">Services I offer</h3>
+      <p class="text-gray-600 mt-2">From landing pages to developer docs — here's how I can help.</p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h4 class="font-semibold">Copywriting</h4>
+          <p class="mt-3 text-gray-700">High-converting copy for landing pages, ads, and emails.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h4 class="font-semibold">Content Writing</h4>
+          <p class="mt-3 text-gray-700">SEO-friendly blog posts and guides that build authority.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h4 class="font-semibold">Technical Writing</h4>
+          <p class="mt-3 text-gray-700">Clear manuals and API docs that delight users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="py-8">
+      <h3 class="text-2xl font-bold">Selected work</h3>
+      <p class="text-gray-600 mt-2">Case studies and samples.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden shadow">
+          <img src="https://via.placeholder.com/600x400?text=Landing+Page" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">Startup Landing Page Copy</h4>
+            <p class="mt-2 text-gray-600 text-sm">Converted 18% of visitors into signups.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow">
+          <img src="https://via.placeholder.com/600x400?text=Guide" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">How-to Guide (SaaS)</h4>
+            <p class="mt-2 text-gray-600 text-sm">Reduced support tickets by 21%.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow">
+          <img src="https://via.placeholder.com/600x400?text=Manual" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">Product User Manual</h4>
+            <p class="mt-2 text-gray-600 text-sm">Structured manual for hardware product.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-8">
+      <h3 class="text-2xl font-bold">Work with me</h3>
+      <p class="text-gray-600 mt-2">Tell me about your project — I’ll reply within one business day.</p>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <form action="mailto:mutungifedel@gmail.com" method="POST" enctype="text/plain" class="bg-white p-6 rounded-2xl shadow">
+          <label class="block text-sm font-medium">Name</label>
+          <input name="name" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm" placeholder="Your name" required />
+
+          <label class="block text-sm font-medium mt-4">Email</label>
+          <input name="email" type="email" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm" placeholder="you@example.com" required />
+
+          <label class="block text-sm font-medium mt-4">Project brief</label>
+          <textarea name="message" rows="5" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm" placeholder="Describe your project" required></textarea>
+
+          <div class="mt-4 flex gap-3">
+            <button type="submit" class="px-4 py-2 rounded-md bg-indigo-600 text-white">Send message</button>
+            <a href="mailto:mutungifedel@gmail.com" class="px-4 py-2 rounded-md border">Or email me</a>
+          </div>
+        </form>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <h4 class="font-semibold">Contact Info</h4>
+          <p class="mt-2 text-sm text-gray-600">Email: <a href="mailto:mutungifedel@gmail.com" class="text-indigo-600">mutungifedel@gmail.com</a></p>
+          <p class="mt-2 text-sm text-gray-600">Phone: 0758 565 096 / 0783 966 567</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 py-6 text-center text-sm text-gray-600">
+    © <script>document.write(new Date().getFullYear())</script> Mutungi Fedel — Built with ✍️ and care.
+  </footer>
+
+</body>
+</html>
